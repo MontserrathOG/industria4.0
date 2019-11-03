@@ -6,28 +6,11 @@
         <?php include("componentes/enlaces.php"); ?>
     </head>
     <body>
-        <div>
-            <div class="">
+        <div class="div-centrado">
+            <div><!--parte central-->
                 <?php
-                include("vistas/navbar.php");
+                include('vistas/login.php');
                 ?>
-            </div>
-            <div class="d-flex justify-content-lg-start">
-                <div><!--parte izquierdo-->
-                    <?php
-                    include('vistas/panelIzquierdo.php');
-                    ?>
-                </div>
-                <div><!--parte central-->
-                    <?php
-                    include('vistas/panelCentral.php');
-                    ?>
-                </div>
-                <div><!--parte Derecha-->
-                    <?php
-                    include('vistas/panelDerecho.php');
-                    ?>
-                </div>
             </div>
         </div>
     </body>
