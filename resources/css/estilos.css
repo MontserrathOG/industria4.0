@@ -3,6 +3,29 @@
     Author     : frangb
 */
 .navbar{
-    background-color:darkorange;
-    
+    background-color:darkorange;   
+}
+
+.div-centrado{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-centrado{
+    display: flex;
+}
+
+.nav-centrado{
+	position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.nav-izq{
+	position: absolute;
+    left: 95%;
+    transform: translatex(-95%);
 }
