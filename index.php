@@ -8,6 +8,7 @@
     <body>
         <div class="div-centrado">
             <div><!--parte central-->
+               <!-- Prueba de commit por fer--> 
                 <?php
                 include('vistas/login.php');
                 ?>
