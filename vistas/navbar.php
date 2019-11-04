@@ -10,10 +10,7 @@
             </li>
             <li class = "nav-item active">
                 <a class = "nav-link white-text" href = "#">Proceso</a>
-            </li>
-            <li class = "nav-item active">
-                <a class = "nav-link white-text" href = "#">Calidad</a>
-            </li>          
+            </li>         
         </ul>
         <ul class = "navbar-nav nav-izq">
             <li class = "nav-item active">
