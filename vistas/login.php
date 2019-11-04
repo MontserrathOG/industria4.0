@@ -1,7 +1,7 @@
 <div class='form-centrado form-group' align="center">
 	<fieldset>
-		<legend align='center'>Bienvenido</legend><br>
-                <form autocomplete='off' method='POST' action='modelo/Queries.php'>
+		<legend align='center'>Bienvenido</legend><br>                
+                <form autocomplete='off' method='POST' action='control/acceso.php'>
 			<input type='text' class='form-control-lg' id='user' name='user' placeholder='USUARIO'><br><br>
 			<input type='password' class='form-control-lg' id='pass' name='pass' placeholder='CONTRASEÑA'><br><br>
 			<button type='submit' class='btn btn-outline-success'>Iniciar sesión</button>

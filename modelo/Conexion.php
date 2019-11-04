@@ -55,33 +55,29 @@ class Conexion {
         $result->free_result();
     }
 
-    public function Select($tabla, $condition) {
-        $conex=new Conexion();
+    public function ConsultaUsuario($tabla, $condition) {
+        $conex = new Conexion();
         $conex->CreateConnection();
-        $query = "SELECT * FROM ".$tabla." WHERE ".$condition;
-        $result = $conex->ExecuteQuery($query);
-        if ($result) {
-
-            while ($row = $conex->GetRows($result)) {
-
-                echo "El usuario es:" . $row[1] . " " . $row[2] . " " . $row[3];
-            }
-
-            $conex->SetFreeResult($result);
-            $conex->CloseConnection();
-        } else {
-            echo "<h3>Error generando la consulta</h3>";
-           $conex->CloseConnection(); 
-        }
+        $query = "SELECT * FROM " . $tabla . " WHERE " . $condition;
+        $result = $conex->ExecuteQuery($query);        
+        if ($result->num_rows > 0) { //si la variable tiene al menos 1 fila entonces seguimos con el codigo
+           $res=$result->fetch_assoc();
+           $conex->CloseConnection();
+           return $res;
+        }         
+        $conex->CloseConnection();
     }
-    
-    public function Insert($tabla,$campos,$valores){
-        $conex=new Conexion();
+
+    public function Insert($tabla, $campos, $valores) {
+        $conex = new Conexion();
         $conex->CreateConnection();
-        $query = "INSERT INTO ".$tabla."(".$campos.") VALUES (".$valores.");";
+        $query = "INSERT INTO " . $tabla . "(" . $campos . ") VALUES (" . $valores . ");";
         /* @var $result type */
-        $resultado=$conex->ExecuteQuery($query);
+        $resultado = $conex->ExecuteQuery($query);
+        $conex->CloseConnection();
         return $resultado;
     }
+
 }
+
 ?>
