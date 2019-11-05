@@ -9,27 +9,27 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <title>Pagina de inicio</title>
         <?php
-            include('componentes/enlaces.php');
+        include('componentes/enlaces.php');
         ?>
     </head>
     <body>
         <div>
             <?php
-                include('vistas/navbar.php');
+            include('vistas/navbar.php');
             ?>
         </div>
-        <div align="center">
-            <img src="componentes/produccion.jpg" width="300" height="500">
-        </div>
-        <div>
+        <div class="d-flex justify-content-md-start">
+            <div align="center">
+                <img src="componentes/produccion.jpg" width="300" height="500">
+            </div>        
             <div>
                 <?php
-                    include('vistas/estandarMaquinaria.php');
+                include('vistas/estandarMaquinaria.php');
                 ?>
             </div>
             <div>
                 <?php
-                    include('vistas/estadoMaquinaria.php');
+                include('vistas/estadoMaquinaria.php');
                 ?>
             </div>
         </div>
