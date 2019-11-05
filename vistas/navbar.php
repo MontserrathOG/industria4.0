@@ -6,10 +6,10 @@
     <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
         <ul class = "navbar-nav nav-centrado">
             <li class = "nav-item active">
-                <a class = "nav-link white-text" href = "#">Mantenimiento</a>
+                <a class = "nav-link white-text" href = "maquinaria.php">Mantenimiento</a>
             </li>
             <li class = "nav-item active">
-                <a class = "nav-link white-text" href = "#">Proceso</a>
+                <a class = "nav-link white-text" href = "produccion.php">Proceso</a>
             </li>         
         </ul>
         <ul class = "navbar-nav nav-izq">
